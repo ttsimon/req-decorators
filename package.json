@@ -1,0 +1,45 @@
+{
+  "name": "req-decorators",
+  "version": "1.0.2",
+  "description": "",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "package.json",
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint --fix --ext .ts, package",
+    "lib": "npm run lint && cross-env NODE_ENV=production rollup -c rollup.config.js"
+  },
+  "author": "ttsimon",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/qs": "^6.9.7",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "axios": "^0.26.0",
+    "commonjs": "^0.0.1",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.9.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
+    "qs": "^6.10.3",
+    "reflect-metadata": "^0.1.13",
+    "rollup": "^2.68.0",
+    "rollup-plugin-cleaner": "^1.0.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "typescript": "^4.5.5"
+  },
+  "peerDependencies": {
+    "@types/qs": "^6.9.7",
+    "axios": "^0.26.0",
+    "qs": "^6.10.3"
+  }
+}
